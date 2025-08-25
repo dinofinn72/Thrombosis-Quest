@@ -2,6 +2,7 @@ var items = {
     lithium: {
         name: `lithium`,
         inspectDescription: `Helps with the visions.`,
+        lookDescription: `lithium`
     },
     shovel: {
         name: `a shovel`,

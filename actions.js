@@ -69,7 +69,6 @@ var actions = {
             places.cityGate.connections["inside"] = "citySquare";
             removeFromArray(places.cityGate.npcs, npcs.guard);
             places.cornFieldCentre.npcs.push(npcs.guard);
-            places.cornFieldCentre.items.push(items["city gate"]);
             npcs.guard.sayAlways = `You try to talk to the guard but their rapturous concentration on fighting the Cactus Lord does not waver.`;
             places.cornFieldCentre = `You are in a large clearing in the centre of the corn field. The guard is having an epic battle with the Cactus Lord; it appears they are evenly matched.`;
         }
@@ -231,9 +230,10 @@ var actions = {
         },
         ifAlreadyDone: `The box is already open.`,
         ifSuccess() {
-            app.println(`You insert the key into the lock on the box. It swings open, revealing a wooden stake.`);
+            app.println(`You insert the key into the lock on the box. It swings open, revealing a wooden stake, and some lithium.`);
             removeFromArray(inventory, items["cell key"]);
             places.cornField.items.push(items["wooden stake"]);
+            places.cornField.items.push(items.lithium);
             items.lockbox.inspectDescription = `An open, rusty lockbox.`;
         }
     },
@@ -380,7 +380,7 @@ var actions = {
             removeFromArray(inventory);
             items.safe.inspectDescription = `An open safe. It looks like it has been in that wall for a very long time.`;
             places.alley.items.push(items["miniature shipwreck"]);
-            app.println(`You insert the key into the keyhole, and the door creaks open.`);
+            app.println(`You insert the key into the keyhole, and the door creaks open revealing: a miniature shipwreck, and some lithium.`);
         }
     },
     "give miniature shipwreck": {
@@ -480,7 +480,8 @@ var actions = {
         ifSuccess() {
             removeFromArray(inventory, items.sack);
             inventory.push(items["fuckload of money"]);
-            app.println(`You pry open the sack to find too many various currencies to count.`);
+            inventory.push(items.lithium);
+            app.println(`You pry open the sack to find too many various currencies to count, and some lithium.`);
         }
     },
     "buy blood thinners": {
@@ -547,3 +548,33 @@ actions["use corpse"] = actions["throw corpse"];
 actions["use cactus"] = actions["give cactus"];
 actions["open lockbox"] = actions["use cell key"];
 actions["break wall"] = actions["use sledgehammer"];
+actions["use tea"] = actions["give tea"];
+actions["unlock lockbox"] = actions["use cell key"];
+actions["use iron"] = actions["give iron"];
+actions["use iron bars"] = actions["give iron"];
+actions["give iron bars"] = actions["give iron"];
+actions["destroy wall"] = actions["use sledgehammer"];
+actions["smash wall"] = actions["use sledgehammer"];
+actions["unlock safe"] = actions["use safe key"];
+actions["open safe"] = actions["use safe key"];
+actions["use cheese"] = actions["use grog"];
+actions["melt cheese"] = actions["use grog"];
+actions["use miniature shipwreck"] = actions["give miniature shipwreck"];
+actions["give shipwreck"] = actions["give miniature shipwreck"];
+actions["use shipwreck"] = actions["give miniature shipwreck"];
+actions["throw bottle"] = actions["throw glass bottle"];
+actions["use bottle"] = actions["throw glass bottle"];
+actions["use glass bottle"] = actions["throw glass bottle"];
+actions["push down"] = actions["push down stairs"];
+actions["push apothecary down stairs"] = actions["push down stairs"];
+actions["push apothecary down"] = actions["push down stairs"];
+actions["push apothecary"] = actions["push down stairs"];
+actions["open door"] = actions["use gaol key"];
+actions["unlock door"] = actions["use gaol key"];
+actions["open cell door"] = actions["use cell key"];
+actions["unlock cell door"] = actions["use cell key"];
+actions["open gaol door"] = actions["use gaol key"];
+actions["unlock gaol door"] = actions["use gaol key"];
+actions["use sack"] = actions["open sack"];
+actions["stab cactus lord"] = actions["kill cactus lord"];
+actions["use"] = actions["kill cactus lord"];

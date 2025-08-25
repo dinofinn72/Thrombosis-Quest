@@ -1,7 +1,7 @@
-var insanityThresholds = [20, 50];
+var insanityThresholds = [40, 100];
 
 var playLocation = places.cornField;
-var inventory = [items.lithium];
+var inventory = [items.lithium, items["metal detector"], items["cell key"]];
 var insanity = 0;
 
 var app = new ConsoleApp({
@@ -24,6 +24,15 @@ var app = new ConsoleApp({
                 app.print(`There is `);
                 printList(descriptions);
             }
+        } else if (text === `help`) {
+            app.println(
+                `"walk to" or "walk inside/out" [place name] (move between places),
+                inventory (shows currently held items),
+                take [item name] (obtains [item]),
+                look (shows surroundings).
+                
+                For actions involving items "use [item name]" generaly works.
+                `);
         } else if (text === `inventory`) {
             if (inventory.length === 0) {
                 app.println(`You have NOTHING!`);
@@ -107,3 +116,4 @@ var app = new ConsoleApp({
 app.println(`"You! You're finally awake, you were trying to cross the corn field."`);
 app.println("As you fully regain consciousness, you realise that the person talking to you was corn and you feel mildly ashamed.");
 app.println(`"You should find some blood thinners soon", you think to yourself.`);
+app.println(`type "help" for commands.`);
