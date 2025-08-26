@@ -126,7 +126,7 @@ var items = {
     "gaol key": {
         name: `a gaol key`,
         inspectDescription: `Not found in cell; opens cell. No particular aroma.`,
-        lookDescription: `a key on a pedestal in the centre of the room`,
+        lookDescription: `a gaol key on a pedestal in the centre of the room`,
         isNailedDown: true,
         nailedText: `You go to take the key, but the apothecary stops you and says: "I said no touching!" They seeth comprehensibly, before returning to their patrol.`
     },
@@ -176,4 +176,5 @@ var hallucinatableItems = [
     `a pigeon (you suspect it's real)`,
     `a pigeon (it may be real)`,
     `a black chihuahua`,
+    `Casual Carl`
 ];

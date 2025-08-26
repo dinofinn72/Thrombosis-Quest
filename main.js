@@ -32,6 +32,8 @@ var app = new ConsoleApp({
                 look (shows surroundings).
                 
                 For actions involving items "use [item name]" generaly works.
+
+                Type in all lower case.
                 `);
         } else if (text === `inventory`) {
             if (inventory.length === 0) {
