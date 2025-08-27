@@ -27,9 +27,10 @@ var app = new ConsoleApp({
         } else if (text === `help`) {
             app.println(
                 `"walk to" or "walk inside/out" [place name] (move between places),
-                inventory (shows currently held items),
-                take [item name] (obtains [item]),
-                look (shows surroundings).
+                "talk to" [npc name],
+                "inventory" (shows currently held items),
+                "take" [item name] (obtains [item]),
+                "look" (shows surroundings).
                 
                 For actions involving items "use [item name]" generaly works.
 
