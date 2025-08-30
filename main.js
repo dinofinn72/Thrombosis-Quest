@@ -1,7 +1,7 @@
 var insanityThresholds = [40, 100];
 
 var playLocation = places.cornField;
-var inventory = [items.lithium, items["metal detector"], items["cell key"]];
+var inventory = [items.lithium];
 var insanity = 0;
 
 var app = new ConsoleApp({
