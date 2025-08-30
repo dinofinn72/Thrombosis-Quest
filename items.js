@@ -139,7 +139,8 @@ var items = {
     "blood thinners": {
         name: `blood thinners`,
         inspectDescription: `An extremly rusty, stained can. It is labelled 'paint thinners', but the word 'paint' has been crossed out with a Sharpie, and 'blood' has been written above it.`,
-        lookDescription: `a can of blood thinners on the shelf`
+        lookDescription: `a can of blood thinners on the shelf`,
+        isNailedDown: true
     },
     sack: {
         name: `a sack`,
