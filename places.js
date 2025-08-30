@@ -7,7 +7,7 @@ var places = {
         ],
         npcs: [],
         connections: {
-            "to farm house": "farmHouseOutside",
+            "to farmhouse": "farmHouseOutside",
             "to city": `cityGate`,
             "to centre": `cornFieldCentre`
         },
@@ -38,7 +38,7 @@ var places = {
         ],
         npcs: [npcs.farmer],
         connections: {
-            "outside": "farmHouseOutside",
+            "out": "farmHouseOutside",
             "upstairs": "farmHouseRoof"
         },
     },
@@ -73,7 +73,7 @@ var places = {
         items: [],
         npcs: [npcs.heretic],
         connections: {
-            "through gate": "cityGate",
+            "out": "cityGate",
             "inside gaol": "gaol",
             "inside alley": "alley",
             "inside smithy": "smithy",

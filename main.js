@@ -121,4 +121,4 @@ var app = new ConsoleApp({
 app.println(`"You! You're finally awake, you were trying to cross the corn field."`);
 app.println("As you fully regain consciousness, you realise that the person talking to you was corn and you feel mildly ashamed.");
 app.println(`"You should find some blood thinners soon", you think to yourself.`);
-app.println(`type "help" for commands.`);
+app.println(`type "help" for general commands.`);
