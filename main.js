@@ -32,7 +32,7 @@ var app = new ConsoleApp({
                 "take" [item name] (obtains [item]),
                 "look" (shows surroundings).
                 
-                For actions involving items "use [item name]" generaly works.
+                For actions involving items "use [item name]" generally works.
 
                 Type in all lower case.
                 `);
