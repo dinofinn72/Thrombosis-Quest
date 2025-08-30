@@ -42,7 +42,7 @@ var actions = {
             app.println(`You throw the corpse at the door.`);
             app.println(`You hear many latches unlatching, and the door creaks open.`);
             app.println(`And the farmer says: "alright I guess you can come in then."`);
-            places.farmHouseOutside.connections["inside"] = "farmHouseInside";
+            places.farmHouseOutside.connections["inside farmhouse"] = "farmHouseInside";
             places.farmHouseOutside.isDoorOpen = true;
         }
     },
@@ -66,7 +66,7 @@ var actions = {
             app.println(`The guard promptly runs away, and the gate follows.`);
             removeFromArray(inventory, items.cactus);
             places.cityGate.description = `The gate is gone.`;
-            places.cityGate.connections["inside"] = "citySquare";
+            places.cityGate.connections["inside city"] = "citySquare";
             removeFromArray(places.cityGate.npcs, npcs.guard);
             places.cornFieldCentre.npcs.push(npcs.guard);
             npcs.guard.sayAlways = `You try to talk to the guard but their rapturous concentration on fighting the Cactus Lord does not waver.`;

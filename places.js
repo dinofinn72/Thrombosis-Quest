@@ -36,7 +36,7 @@ var places = {
             items.meat,
             items.cactus,
         ],
-        npcs: [],
+        npcs: [npcs.farmer],
         connections: {
             "outside": "farmHouseOutside",
             "upstairs": "farmHouseRoof"

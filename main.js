@@ -26,10 +26,12 @@ var app = new ConsoleApp({
             }
         } else if (text === `help`) {
             app.println(
-                `"walk to" or "walk inside/out" [place name] (move between places),
+                `commands that work anywhere:
+                "walk to" or "walk inside" [place name] or "walk upstairs/downstairs/out" (move between places) which one applies varies depending on location,
                 "talk to" [npc name],
                 "inventory" (shows currently held items),
                 "take" [item name] (obtains [item]),
+                "inspect" [item/npc name] (shows description of item/npc that is in your inventory or in the location),
                 "look" (shows surroundings).
                 
                 For actions involving items "use [item name]" generally works.
