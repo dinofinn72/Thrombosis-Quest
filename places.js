@@ -2,7 +2,7 @@ var places = {
     cornField: {
         name: `Corn Field`,
         arriveMessage: `You are in the corn field.`,
-        description: `You are surrounded by tall ears of corn, blotting out the horizon. Rising above them, you see the roof of a farm house.`,
+        description: `You are surrounded by tall ears of corn, blotting out the horizon. Rising above them, you see the roof of a farmhouse.`,
         items: [
         ],
         npcs: [],
@@ -69,13 +69,13 @@ var places = {
     citySquare: {
         name: `City Square`,
         arriveMessage: `You are in the city square.`,
-        description: `You are in the town square. It is bustling with people. Alongside the other buldings, there is a smithy and gaol. There are two pathes leading out of the square, an alley between two of the more unassuming buldings, and a large street.`,
+        description: `You are in the town square. It is bustling with people. Alongside the other buldings, there is a smithy and gaol. There are two paths leading out of the square, an alley between two of the more unassuming buldings, and a large street.`,
         items: [],
         npcs: [npcs.heretic],
         connections: {
             "out": "cityGate",
             "inside gaol": "gaol",
-            "inside alley": "alley",
+            "to alley": "alley",
             "inside smithy": "smithy",
             "to street": "street"
         },
