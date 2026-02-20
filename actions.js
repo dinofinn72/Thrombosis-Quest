@@ -277,6 +277,8 @@ var actions = {
             app.println("You muscle your way through the crowd and silently hand the barman the crates of tea. He quickly makes the ravenous crowd their tea, so the bar returns to its normal state. Afterwards, he thanks you profusely and gives you 8.627 iron bars as repayment.");
             inventory.push(items["iron bars"]);
             npcs.barman.sayAlways = undefined;
+            places.tavern.npcs.push(npcs["grog connoisseur"]);
+            places.tavern.items.push(items.grog);
             places.tavern.isBusy = false;
             places.tavern.description = `You are in the tavern. There are a couple of regulars sitting at the bar, and remnants of the mob drinking tea now.`;
             removeFromArray(inventory, items.tea);
