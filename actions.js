@@ -382,6 +382,7 @@ var actions = {
             removeFromArray(inventory);
             items.safe.inspectDescription = `An open safe. It looks like it has been in that wall for a very long time.`;
             places.alley.items.push(items["miniature shipwreck"]);
+            places.alley.items.push(items.lithium);
             app.println(`You insert the key into the keyhole, and the door creaks open revealing: a miniature shipwreck, and some lithium.`);
         }
     },

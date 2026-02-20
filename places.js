@@ -14,9 +14,9 @@ var places = {
         isDug: false,
     },
     farmHouseOutside: {
-        name: `Farm House`,
-        arriveMessage: `You are outside of the farm house.`,
-        description: `It is an average farm house, with a large locked door. You can hear sounds coming from inside.`,
+        name: `Farmhouse`,
+        arriveMessage: `You are outside of the farmhouse.`,
+        description: `It is an average farmhouse, with a large locked door. You can hear sounds coming from inside.`,
         items: [
             items.shovel
         ],
@@ -28,9 +28,9 @@ var places = {
         isDoorOpen: false
     },
     farmHouseInside: {
-        name: `Inside Farm House`,
-        arriveMessage: `You are inside the farm house.`,
-        description: `You are in a "typical" medieval farm house. There is a large wooden table, and a spiral staircase in the corner leading up to the roof.`,
+        name: `Inside Farmhouse`,
+        arriveMessage: `You are inside the farmhouse.`,
+        description: `You are in a "typical" medieval farmhouse. There is a large wooden table, and a spiral staircase in the corner leading up to the roof.`,
         items: [
             items.knife,
             items.meat,
@@ -43,8 +43,8 @@ var places = {
         },
     },
     farmHouseRoof: {
-        name: `Atop farm house`,
-        arriveMessage: `You are atop the farm house.`,
+        name: `Atop farmhouse`,
+        arriveMessage: `You are atop the farmhouse.`,
         description: `You are on a wooden platform attached to the roof, with a table and chairs.`,
         items: [
             items.binoculars,
@@ -63,7 +63,7 @@ var places = {
         npcs: [npcs.guard],
         connections: {
             "to corn field": "cornField",
-            "to farm house": "farmHouseOutside"
+            "to farmhouse": "farmHouseOutside"
         },
     },
     citySquare: {
@@ -235,9 +235,9 @@ var places = {
 };
 
 var hallucinatablePlaces = [
-    this.cornField,
-    this.SeaWattGaming,
-    this.gower,
-    this.boilPrawnShack,
-    this.beatSaber,
+    places.cornField,
+    places.SeaWattGaming,
+    places.gower,
+    places.boilPrawnShack,
+    places.beatSaber,
 ];
